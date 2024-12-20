@@ -1,11 +1,10 @@
 {
   "name": "practice",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
-  "scripts": {cd
-    "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "Javascript",
@@ -13,5 +12,14 @@
   ],
   "author": "Farhan Ansari",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.2"
+  }
 }
